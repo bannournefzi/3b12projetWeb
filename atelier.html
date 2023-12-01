@@ -1,41 +1,50 @@
-<html>
-    <head>
-        <title>Accueil</title>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <img src="image/home_FILL0_wght400_GRAD0_opsz24.png" alt="home Logo"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+	<link rel="stylesheet" href="new.css">
+</head>
+<body>
         <header>
-			<img src="image/esprit.jpg" width="350" height="100"">
-			<h1>Welcome to My Portfolio</h1>
-			<nav>
-				<ul>
-					<li><a href="Accueil.html">Accueil</a></li>
-					<li><a href="academic.html">Academic Journey</a></li>
-					<li><a href="experiences.html">Professional Experiences</a></li>
-					<li><a href="#contact.me">Contact</a></li>
-				</ul>
-			</nav>
-        <img src="image/hello.jpg" width="100" height="110"">
+        <img src="image/esprit-removebg-preview.png" alt="ESPRIT Logo" width="250" height="70"> 
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul class="btn-box">
+                <li><a class="btn" href="academic.html">Academic Journey</a></li>
+                <li><a class="btn" href="projects.html">projects</a></li>
+                <li><a class="btn" href="#contact-me">Contact</a>
+            </ul>
+        </nav>
+        <img src="image/hello.jpg" alt="Profile Image" width="150" height="170" class="profile-image">
     </header>
-	<h2>A propos</h2>
-	<p>Je m'appelle Bannour Nefzi, j'ai 23 ans et je suis 
-		étudiant en ingénierie après avoir obtenu un diplôme en mécanique. </p>
-		<p>Passionné par l'informatique et le sport, j'apprécie explorer le croisement entre l'innovation technologique et l'activité physique.</p>
-		<hr>
-		<h2>Objectif professionnel</h2>
-		<p>Étudiant en informatique à l'ESPRIT, je suis passionné par les technologies de l'information et du numérique.</p>
-		<p>Doté de solides compétences en programmation, en conception logicielle et en résolution de problèmes informatiques</p>
-		<p>je recherche des opportunités qui me permettront d'appliquer mes connaissances de manière pratique</p>
-		<p>Mon objectif est de contribuer à des projets innovants, d'acquérir une expérience professionnelle significative et de continuer à développer mes compétences dans un environnement stimulant.</p>
-		<hr>
-		<p id="contact.me">Contact me:</p>
+
+    <section class="about">
+        <h2>A propos</h2>
+        <p>Je m'appelle Bannour Nefzi, j'ai 23 ans et je suis étudiant en ingénierie après avoir obtenu un diplôme en mécanique.</p>
+        <p>Passionné par l'informatique et le sport, j'apprécie explorer le croisement entre l'innovation technologique et l'activité physique.</p>
+    </section>
+
+    <section class="professional-objective">
+        <h2>Objectif professionnel</h2>
+        <p>Étudiant en informatique à l'ESPRIT, je suis passionné par les technologies de l'information et du numérique. Doté de compétences approfondies en programmation, conception logicielle et résolution de problèmes informatiques, je recherche des opportunités stimulantes pour appliquer mes connaissances de manière pratique.</p>
+        <p>Mon objectif est de contribuer activement à des projets innovants, d'acquérir une expérience professionnelle significative et de continuer à développer mes compétences dans un environnement dynamique. Je suis motivé par la possibilité de faire une réelle différence en collaborant avec des équipes talentueuses et en travaillant sur des solutions novatrices.</p>
+    </section>
+
+    <section id="contact-me">
+        <h2>Contact me</h2>
         <ul>
-			<li>LinkedIn: <a href="https://www.linkedin.com/in/bannour.nefzi" target="_blank"> LinkedIn</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/bannour.nefzi" target="_blank">LinkedIn</a></li>
             <li>Email: <a href="mailto:Bannour.nefzi@esprit.tn">Bannour.nefzi@esprit.tn</a></li>
             <li>Phone: +216 50929636</li>
         </ul>
-		<hr>
-		<footer>
-			<p>Nefzi Bannour</p>
-		</footer>
+    </section>
 
+    <footer>
+        <p>&copy; 2023 nefzi bannour . Tous droits réservés.</p>
+    </footer>
+</body>
 </html>
