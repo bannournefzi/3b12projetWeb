@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
@@ -34,11 +35,27 @@
     </script>
 
     <header id="navbar">
+        <div class="container">
+            <div class="my-3">
+              <div class="footer-nav">
+                <nav role="navigation">
+                  <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/profile.php?id=100004245316400" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
         <img src="image/esprit-removebg-preview.png" alt="ESPRIT Logo" width="250" height="70"> 
         <h1>Welcome to My Portfolio</h1>
         <nav>
             <ul class="btn-box">
-                <li><a class="btn" href="academic.html">Academic Journey</a></li>
+                <li><a class="btn" href="academic.html">Academic</a></li>
                 <li><a class="btn" href="projects.html">Projects</a></li>
                 <li><a class="btn" href="#contact-me">Contact</a></li>
             </ul>
@@ -46,27 +63,69 @@
         <img src="image/hello.jpg" alt="Profile Image" width="150" height="170" class="profile-image">
     </header>
 
-    <section class="about">
-        <h2>A propos</h2>
-        <p>Je m'appelle Bannour Nefzi, j'ai 23 ans et je suis étudiant en ingénierie après avoir obtenu un diplôme en mécanique.</p>
-        <p>Passionné par l'informatique et le sport, j'apprécie explorer le croisement entre l'innovation technologique et l'activité physique.</p>
-    </section>
+    <div class="about-section pt-4 px-3 px-lg-4 mt-1">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="h3 mb-3">About Me</h2>
+            <p>Hello! I’m Nefzi Bannour. I am passionate about Web Design. I am a skilled Front-end Developer and master of Graphic Design tools such as Photoshop.</p>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <div class="row mt-2">
+              <div class="col-sm-4">
+                <div class="pb-1">Age</div>
+              </div>
+              <div class="col-sm-8">
+                <div class="pb-1 text-secondary">23</div>
+              </div>
+              <div class="col-sm-4">
+                <div class="pb-1">Email</div>
+              </div>
+              <div class="col-sm-8">
+                <div class="pb-1 text-secondary">bannour.nefzi@esprit.tn</div>
+              </div>
+              <div class="col-sm-4">
+                <div class="pb-1">Phone</div>
+              </div>
+              <div class="col-sm-8">
+                <div class="pb-1 text-secondary">+216-50929636</div>
+              </div>
+              <div class="col-sm-4">
+                <div class="pb-1">Address</div>
+              </div>
+              <div class="col-sm-8">
+                <div class="pb-1 text-secondary">5090, Bekalta, Monastir, tunis</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <section class="professional-objective">
         <h2>Objectif professionnel</h2>
         <p>Étudiant en informatique à l'ESPRIT, je suis passionné par les technologies de l'information et du numérique. Doté de compétences approfondies en programmation, conception logicielle et résolution de problèmes informatiques, je recherche des opportunités stimulantes pour appliquer mes connaissances de manière pratique.</p>
         <p>Mon objectif est de contribuer activement à des projets innovants, d'acquérir une expérience professionnelle significative et de continuer à développer mes compétences dans un environnement dynamique. Je suis motivé par la possibilité de faire une réelle différence en collaborant avec des équipes talentueuses et en travaillant sur des solutions novatrices.</p>
     </section>
-
-    <section id="contact-me">
-        <h2>Contact me</h2>
-        <ul>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/bannour.nefzi" target="_blank">LinkedIn</a></li>
-            <li>Email: <a href="mailto:Bannour.nefzi@esprit.tn">Bannour.nefzi@esprit.tn</a></li>
-            <li>Phone: +216 50929636</li>
-        </ul>
-    </section>
-
+<section id="contact-me">
+    <hr class="d-print-none"/>
+  <div class="contant-section px-3 px-lg-4 pb-4" id="contact">
+    <h2 class="h3 text mb-3">Contact</h2>
+    <div class="row">
+      <div class="col-md-7 d-print-none">
+        <div class="my-2"><form action="https://gmail.com/nefzi.bannour@esprit.tn"
+    method="POST">
+  <div class="row">
+    <div class="col-6">
+      <input class="form-control" type="text" id="name" name="name" placeholder="Your Name" required>
+    </div>
+    <div class="col-6">
+      <input class="form-control" type="email" id="email" name="_replyto" placeholder="your email" required>
+    </div>
+  </div>
+  <div class="form-group my-2">
+    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4"  placeholder="Your Message" required></textarea>
+  </div>
+  <button class="btn btn-primary mt-2" type="submit">Send</button>
+</section>
     <footer>
         <p>&copy; 2023 nefzi bannour . Tous droits réservés.</p>
     </footer>
