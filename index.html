@@ -1,22 +1,46 @@
-<html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <img src="image/home_FILL0_wght400_GRAD0_opsz24.png" alt="home Logo"> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <title>Accueil</title>
-	<link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="new.css">
 </head>
 <body>
-        <header>
+    <div class="content">
+        <button id="scrollTopBtn">Go to Top</button>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var scrollTopBtn = document.getElementById("scrollTopBtn");
+        
+            scrollTopBtn.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        
+            window.addEventListener("scroll", function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollTopBtn.style.display = "block";
+                } else {
+                    scrollTopBtn.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+    <header id="navbar">
         <img src="image/esprit-removebg-preview.png" alt="ESPRIT Logo" width="250" height="70"> 
         <h1>Welcome to My Portfolio</h1>
         <nav>
             <ul class="btn-box">
                 <li><a class="btn" href="academic.html">Academic Journey</a></li>
-                <li><a class="btn" href="projects.html">projects</a></li>
-                <li><a class="btn" href="#contact-me">Contact</a>
+                <li><a class="btn" href="projects.html">Projects</a></li>
+                <li><a class="btn" href="#contact-me">Contact</a></li>
             </ul>
         </nav>
         <img src="image/hello.jpg" alt="Profile Image" width="150" height="170" class="profile-image">

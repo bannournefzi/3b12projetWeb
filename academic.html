@@ -1,54 +1,89 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-        <link rel="stylesheet" href="styles.css">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="new.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academic Journey</title>
-    </head>
-    <body>
-        <header>
-            <h1>Academic Journey</h1>
-            <nav>
-                <ul>
-                    <li><a class="btn" href="atelier.html">Home</a></li>
-                    <li><a class="btn" href="projects.html">projects</a></li>
-                </ul>
-            </nav>
-        </header>
-        <hr>
-            <h2>My Academic Projects</h2>
-        <hr>
-        <h2>Éducation</h2>
-        <p>Diplôme de Mécanique - ISET Tozeur</p>
-        <p>Date d'obtention : [12/6/2023]</p>
-        <h2>Stage PFE</h2>
-        <p>Stage chez Segula Technologies</p>
-        <p>Mention : Excellent</p>
-        <p>Date de stage : [01/02/2023] à [06/06/2023]</p>
-        <h2>Études Actuelles</h2>
-        <p>Étudiant en Informatique - Ingénieur</p>
-        <p>[ESPRIT]</p>
-        <h2>Languages</h2>
-            <ul>
-                <li>French - Native</li>
-                <li>English - Proficient</li>
+</head>
+<body>
+    <div class="content"></div>
+
+    <button id="scrollTopBtn">Top</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var scrollTopBtn = document.getElementById("scrollTopBtn");
+        
+            scrollTopBtn.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        
+            window.addEventListener("scroll", function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollTopBtn.style.display = "block";
+                } else {
+                    scrollTopBtn.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+    <header id="navbar">
+        <h1>Academic Journey</h1>
+        <nav>
+            <ul class="btn-box">
+                <li><a class="btn" href="index.html">Home</a></li>
+                <li><a class="btn" href="projects.html">Projects</a></li>
             </ul>
-        <section id="tableau">
-            <h2>Récapitulatif</h2>
-            <table>
-                <tr>
-                    <th>Diplôme</th>
-                    <th>Mention</th>
-                    <th>Stages</th>
-                    <th>Compétences</th>
-                </tr>
-                <tr>
-                    <td>Diplôme de Mécanique</td>
-                    <td>Excellence</td>
-                    <td>Segula Technologies</td>
-                    <td>Mécanique, Informatique</td>
-                </tr>
-                
-            </table>
-        </section>
-    </body>
+        </nav>
+    </header>
+
+    <hr>
+    <h1>My Academic Projects</h1>
+    <hr>
+    <section class="about">
+    <h2>Éducation</h2>
+    <p>Diplôme de Mécanique - ISET Tozeur</p>
+    <p>Date d'obtention : [12/6/2023]</p>
+</section>
+<section class="about">
+    <h2>Stage PFE</h2>
+    <p>Stage chez Segula Technologies</p>
+    <p>Mention : Excellent</p>
+    <p>Date de stage : [01/02/2023] à [06/06/2023]</p>
+</section>
+<section class="about">
+    <h2>Études Actuelles</h2>
+    <p>Étudiant en Informatique - Ingénieur</p>
+    <p>[ESPRIT]</p>
+</section>
+    <h2>Languages</h2>
+    <ul>
+        <li>French - Native</li>
+        <li>English - Proficient</li>
+    </ul>
+
+    <section id="tableau">
+        <h2>Récapitulatif</h2>
+        <table>
+            <tr>
+                <th>Diplôme</th>
+                <th>Mention</th>
+                <th>Stages</th>
+                <th>Compétences</th>
+            </tr>
+            <tr>
+                <td>Diplôme de Mécanique</td>
+                <td>Excellence</td>
+                <td>Segula Technologies</td>
+                <td>Mécanique, Informatique</td>
+            </tr>
+        </table>
+    </section>
+</body>
 </html>
