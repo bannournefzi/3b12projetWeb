@@ -1,28 +1,34 @@
 body {
-    
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; 
+  min-width: 600px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+header {
+  background-color: rgba(35, 76, 242, 0.616);
+  padding: 15px;
+  color: #696969;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.social-item {
+  margin-right: 10px;
+}
+.social-item:hover {
+  transform: scale(1.2);
 }
 
-header {
-    background-color: rgba(35, 76, 242, 0.616); 
-    padding: 15px;
-    color: #696969;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
 nav ul {
     list-style: none;
     margin: 0;
@@ -55,7 +61,7 @@ nav ul.btn-box a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 20px; /* Ajuster la taille du bouton */
+    padding: 10px 20px; /* Ajuster la taille du bouton */
     border-radius: 8px;
     background: #001f3f; /* Couleur principale du bouton */
     color: #fff;
@@ -70,6 +76,7 @@ nav ul.btn-box a:hover {
     outline: dotted 1px;
   outline: -webkit-focus-ring-color auto 5px; 
   text-transform: none;
+  
 }
 
 .about {
@@ -183,6 +190,11 @@ main {
     margin: auto; 
 }
 
+.my-3 li ion-icon:hover
+{
+    font-size: 4em; 
+    opacity: 1;
+}
 .my-3 {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -203,7 +215,7 @@ main {
 }
 
 .nav-link {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-decoration: none;
     color: #333;
 }
@@ -211,7 +223,7 @@ main {
     margin-top: 20px;
 }
 .nav-link:hover {
-    color: #007bff;
+    color: #ff0000;
 }
 
 .text-small {
@@ -392,4 +404,13 @@ main {
 }
 #contact-me textarea:focus ~ i {
   color: #007bff;
-}   
+}  
+.profile-image {
+  border-radius: 50%;
+  border: 2px solid #ff0000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+}
